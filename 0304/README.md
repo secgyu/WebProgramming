@@ -82,8 +82,8 @@ IDE는 (Integrated Development Environment)로 소프트웨어 개발을 쉽게�
 
 ## 1️⃣ CRA 방식 (현재는 비추천)
 
-**CRA(Create React App)**는 기존에 많이 사용되던 방식이지만,  
-현재 **Facebook(메타)**에서 더 이상 관리하지 않아 사용을 권장하지 않습니다.
+**CRA(Create React App)** 는 기존에 많이 사용되던 방식이지만,  
+현재 **Facebook(메타)** 에서 더 이상 관리하지 않아 사용을 권장하지 않습니다.
 
 🔹 **CRA 설치 명령어 (비추천)**
 
