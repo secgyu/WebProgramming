@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>자기소개</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const header = document.createElement("div");
+        header.classList.add("header");
+
+        const h1 = document.createElement("h1");
+        h1.textContent = "안녕하세요!";
+        header.appendChild(h1);
+
+        const nameText = document.createElement("p");
+        nameText.innerHTML = `제 이름은 <span class="highlight">김규민</span> 입니다.`;
+        header.appendChild(nameText);
+
+        const description = document.createElement("p");
+        description.textContent = "능력있는 개발자가 되고 싶습니다!!";
+        header.appendChild(description);
+
+        document.body.appendChild(header);
+
+        const container = document.createElement("div");
+        container.classList.add("container");
+        document.body.appendChild(container);
+
+        const box1 = document.createElement("div");
+        box1.classList.add("box");
+
+        const title1 = document.createElement("h2");
+        title1.textContent = "한 줄 소개";
+        box1.appendChild(title1);
+
+        const content1 = document.createElement("p");
+        content1.innerHTML =
+          "저는 프론트엔드 개발자입니다.<br>끊임없는 공부를 통해 성장하고, 가치를 빠르고 안전하게 전달하는 개발을 하고싶습니다.";
+        box1.appendChild(content1);
+
+        const img = document.createElement("img");
+        img.src = "./image/image.png";
+        img.alt = "프로필 이미지";
+        img.classList.add("profile-img");
+        box1.appendChild(img);
+
+        container.appendChild(box1);
+
+        const box2 = document.createElement("div");
+        box2.classList.add("box");
+
+        const title2 = document.createElement("h2");
+        title2.textContent = "MBTI";
+        box2.appendChild(title2);
+
+        const mbtiText = document.createElement("p");
+        mbtiText.innerHTML = "<strong>ENTJ</strong><br> 리더십, 전략적 사고, 실행력";
+        box2.appendChild(mbtiText);
+
+        const careerTitle = document.createElement("h2");
+        careerTitle.textContent = "경력";
+        box2.appendChild(careerTitle);
+
+        const careerList = [
+          "2024 울산정보산업진흥원 AI테크 해커톤 대회 최우수상 수상",
+          "2024 MS 클라우드를 활용한 인공지능 서비스 개발 경진대회 장려상 수상",
+          "2024 BDIA Devton 혁신상 수상",
+          "2024 경성대학교 캡스톤디자인 경진대회 최우수상 수상",
+          "2025 ASCC Silver Award 수상",
+        ];
+
+        careerList.forEach((item) => {
+          const careerItem = document.createElement("p");
+          careerItem.textContent = item;
+          box2.appendChild(careerItem);
+        });
+
+        const link = document.createElement("a");
+        link.href = "https://dafuri.com/ko-kr";
+        link.innerHTML = "<p>Dafuri 사이트 유지보수</p>";
+        box2.appendChild(link);
+
+        container.appendChild(box2);
+
+        const box3 = document.createElement("div");
+        box3.classList.add("box");
+
+        const title3 = document.createElement("h2");
+        title3.textContent = "취미 / 관심사";
+        box3.appendChild(title3);
+
+        const content3 = document.createElement("p");
+        content3.textContent = "스포츠, 여행, IT 트렌드 탐색, 게임";
+        box3.appendChild(content3);
+
+        const skillsTitle = document.createElement("h2");
+        skillsTitle.textContent = "기술";
+        box3.appendChild(skillsTitle);
+
+        const skillsData = {
+          프론트엔드: [
+            "React",
+            "Next.js",
+            "TypeScript",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "Tailwind",
+            "Bootstrap",
+            "Tanstack Query",
+            "Zustand",
+          ],
+          백엔드: ["Node.js", "Python", "Flask"],
+          데이터베이스: ["SQLite", "PostgreSQL", "MySQL", "Oracle SQL"],
+        };
+
+        for (let category in skillsData) {
+          const categoryTitle = document.createElement("h3");
+          categoryTitle.textContent = category;
+          box3.appendChild(categoryTitle);
+
+          const list = document.createElement("ul");
+          skillsData[category].forEach((skill) => {
+            const listItem = document.createElement("li");
+            listItem.textContent = skill;
+            list.appendChild(listItem);
+          });
+
+          box3.appendChild(list);
+        }
+
+        container.appendChild(box3);
+      });
+    </script>
+  </body>
+</html>
