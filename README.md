@@ -6,7 +6,7 @@
 | ------ | ------------------------------------------------------------------------------------------------------- |
 | 2주차  | [HTML & JS 자소서](https://github.com/secgyu/WebProgramming/tree/main/0311/report)                      |
 | 4주차  | [웹사이트 5개 이상 컴포넌트](https://github.com/secgyu/WebProgramming/tree/main/0325/report/web_report) |
-| 6주차  | [페이지 구축] (https://github.com/secgyu/WebProgramming/tree/main/0408/report/reportweb)                |
+| 6주차  | [페이지 구축](https://github.com/secgyu/WebProgramming/tree/main/0408/report/reportweb)                 |
 
 ---
 
